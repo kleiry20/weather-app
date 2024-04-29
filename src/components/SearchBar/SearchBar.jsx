@@ -1,7 +1,6 @@
 import "./SearchBar.css";
 import { useState } from "react";
 
-
 const SearchBar = (props) => {
   const { city, setCity } = props;
 
@@ -20,7 +19,7 @@ const SearchBar = (props) => {
 
     const newTimerId = setTimeout(() => {
       search(value);
-    }, 500);
+    }, 1000);
 
     setTimerId(newTimerId);
   };
