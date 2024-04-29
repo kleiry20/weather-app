@@ -1,5 +1,12 @@
 ### Overview
-This is a weather app project. It consists of a search bar at the top to find current weather information by city name. It is developed using React, JavaScript, and Vite.
+This is a weather app project developed using React, JavaScript, and Vite.
+
+The UI is divided into 3 sections:
+- Weather forecast for the day along with current weather details like temperature
+- Air conditions for the day including details like real feel, humidity, wind speed, day
+- 7-Day Forecast for upcoming days (+ a motivational quote)
+
+It consists of a search bar at the top to find current weather information by city name. 
 
 The app is mobile and desktop responsive along with a modern and appealing UI. Code follows modular react components along with pure CSS, flexbox, and media query skills. The project was initiated using Vite's React JavaScript template, providing a modern and fast development environment.
 
