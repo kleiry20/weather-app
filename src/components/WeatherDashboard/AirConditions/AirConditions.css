@@ -1,0 +1,32 @@
+.air-component {
+  display: flex;
+  width: 50%;
+  /* border: 1px solid green; */
+  gap: 1rem;
+}
+
+.air-component--content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.air-title {
+  font-size: 16px;
+  color: var(--color-gray);
+  font-weight: 300;
+}
+
+.air-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+  .air-title {
+    font-size: 14px;
+  }
+  .air-value {
+    font-size: 20px;
+  }
+}

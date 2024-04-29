@@ -1,0 +1,126 @@
+.seven-days-forecast {
+  width: 30%;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-text3);
+}
+
+.seven-days-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+}
+
+.seven-day-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.seven-day-row:last-child {
+  border: none;
+}
+.divider {
+  border-bottom: 0.1px solid var(--color-gray);
+}
+
+.day-of-the-week {
+  font-size: 18px;
+}
+.seven-day-mid {
+  display: flex;
+  align-items: center;
+}
+.seven-day-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.seven-day {
+  color: var(--color-text1);
+  /* margin-left: 0.5rem; */
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.seven-day-maxTemp {
+  color: var(--color-text1);
+  font-weight: 700;
+  font-size: 18px;
+}
+.seven-day-minTemp {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.day-info {
+  margin-top: 2rem;
+}
+.day-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.day-text {
+  letter-spacing: 2px;
+  font-family: var(--font-poppins);
+}
+
+/* medi */
+@media screen and (max-width: 425px) {
+  .seven-days-forecast {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    width: 100%;
+  }
+
+  .seven-days-title {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .day-of-the-week {
+    font-size: 14px;
+  }
+  .seven-day-icon {
+    height: 40px;
+    width: 40px;
+  }
+  .seven-day {
+    font-weight: 100;
+    margin: 0;
+  }
+  .seven-day-maxTemp {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .seven-day-minTemp {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .seven-days-forecast {
+    padding: 1rem 1.5rem 0;
+  }
+  .seven-day-row {
+    padding-bottom: 0.4rem;
+  }
+  .seven-days-title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seven-days-forecast {
+    padding: 1rem 1.5rem 0;
+  }
+  .seven-day-row {
+    padding-bottom: 0.4rem;
+  }
+  .seven-days-title {
+    margin-bottom: 0;
+  }
+}

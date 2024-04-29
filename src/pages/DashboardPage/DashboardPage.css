@@ -1,0 +1,41 @@
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+.dashboard-page {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
+  color: white;
+  margin: 3rem;
+}
+
+/* media queries */
+@media (max-width: 425px) {
+  .dashboard-layout {
+    /* margin: 3rem 1rem; */
+    padding: 1rem;
+    border: 1px solid green;
+  }
+  .dashboard-page {
+    border: 1px solid red;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-page {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-page {
+    margin: 2rem;
+  }
+  
+}
