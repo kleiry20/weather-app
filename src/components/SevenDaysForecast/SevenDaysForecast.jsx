@@ -23,8 +23,6 @@ const FourDaysForecast = (props) => {
         );
         if (response.ok) {
           const data = await response.json();
-          console.log("qoutee", data);
-
           const { quoteText, quoteAuthor } = data.data[0];
           setQuote({
             quoteText,

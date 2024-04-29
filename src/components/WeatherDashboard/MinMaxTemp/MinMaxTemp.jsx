@@ -1,25 +1,12 @@
 import useFetch from "../../../hooks/useFetch";
 import "./MinMaxTemp.css";
 
-// assets
-// import clear_icon from "../../../assets/clear.png";
-// import snow from "../../../assets/snow.png";
-// import humidity from "../../../assets/humidity.png";
-// import rain from "../../../assets/rain.png";
-// import cloud from "../../../assets/cloud.png";
-// import wind from "../../../assets/wind.png";
-// import drizzle from "../../../assets/drizzle.png";
-// import search from "../../../assets/search.png";
-import sun from "../../../assets/sun.png";
-import { useState } from "react";
-
 const MinMaxTemp = (props) => {
   const { city, apiKey } = props;
 
   let url = `https://api.openweathermap.org/data/2.5/forecast?appid=${apiKey}&q=${city}&units=Metric&cnt=5`;
 
   const { data, error, isLoading } = useFetch(url);
-  console.log("dabba weather", data);
   if (isLoading) {
     return <div>Loading...</div>;
   }

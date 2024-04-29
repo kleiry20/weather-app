@@ -3,7 +3,6 @@ import SearchBar from "../SearchBar/SearchBar";
 import sun from "../../assets/sun.png";
 
 import useFetch from "../../hooks/useFetch";
-import { useState } from "react";
 import ErrorComponent from "../ErrorComponent/ErrorComponent";
 import MinMaxTemp from "./MinMaxTemp/MinMaxTemp";
 import AirConditions from "./AirConditions/AirConditions";
@@ -17,14 +16,9 @@ import { RiWaterPercentFill } from "react-icons/ri";
 const WeatherDashboard = (props) => {
   const { city, setCity, apiKey } = props;
 
-  console.log(city, "city from dashb");
-
-  // temperature, humididty, wind speed
-
   // current weather api call
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=Metric&appid=${apiKey}`;
   const { data, error, isLoading } = useFetch(url);
-  console.log("current weather", data);
   if (isLoading) {
     return <div>Loading...</div>;
   }
