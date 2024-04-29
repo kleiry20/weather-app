@@ -1,6 +1,5 @@
 import "./WeatherDashboard.css";
 import SearchBar from "../SearchBar/SearchBar";
-import sun from "../../assets/sun.png";
 
 import useFetch from "../../hooks/useFetch";
 import ErrorComponent from "../ErrorComponent/ErrorComponent";
@@ -57,20 +56,16 @@ const WeatherDashboard = (props) => {
               className="current-weather-icon"
               src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
               alt="weatherIcon"
-              // height={200}
-              // width={200}
+            
             />
-            {/* <div>
-              <p className="m-0">H:</p>
-              <p className="m-0">L:</p>
-            </div> */}
+           
           </div>
         </div>
       ) : (
         <ErrorComponent />
       )}
-      {/* min max temp */}
-      <div className="child-card-div">
+      {/* temp throughout the day */}
+      <div className="child-card-temp-div">
         <h4 className="child-card--title">Weather Forecast</h4>
         <div className="child-temp-data">
           <MinMaxTemp city={city} apiKey={apiKey} />
@@ -80,7 +75,7 @@ const WeatherDashboard = (props) => {
       <br />
       <br />
 
-      {/* air  herererrerer*/}
+      {/* air conditions component*/}
       <div className="child-card-div">
         <h4 className="child-card--title">Air Conditions</h4>
         {data != null && data.cod != "404" ? (

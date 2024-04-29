@@ -1,7 +1,6 @@
 .app {
   display: flex;
   justify-content: space-between;
-  /* gap: 2rem; */
   color: white;
   margin: 3rem;
 }

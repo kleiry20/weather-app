@@ -23,6 +23,7 @@
 .seven-day-row:last-child {
   border: none;
 }
+
 .divider {
   border-bottom: 0.1px solid var(--color-gray);
 }
@@ -60,22 +61,72 @@
 }
 .day-div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .day-text {
   letter-spacing: 2px;
   font-family: var(--font-poppins);
 }
 
-/* medi */
+.qouteText {
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
+
+/* media */
+@media screen and (max-width: 1024px) {
+  .seven-days-forecast {
+    padding: 1rem 1.5rem 0;
+  }
+  .seven-day-row {
+    padding-bottom: 0.4rem;
+  }
+  .seven-days-title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seven-days-forecast {
+    padding: 1rem 1.5rem 0;
+  }
+  .seven-day-row {
+    padding: 1rem 0;
+  }
+  .seven-days-title {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .day-of-the-week {
+    font-size: 14px;
+  }
+  .seven-day {
+    font-size: 14px;
+  }
+  .seven-day-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .seven-day-maxTemp {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .seven-day-minTemp {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .day-info {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .seven-days-forecast {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 100%;
   }
-
+  .seven-day-row {
+    padding: 1rem;
+  }
   .seven-days-title {
     font-weight: 400;
     font-size: 12px;
@@ -99,28 +150,23 @@
     font-weight: 300;
     font-size: 14px;
   }
+  .day-info {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .day-div {
+    justify-content: space-between;
+  }
+  .qouteText {
+    font-size: 14px;
+  }
+  .qouteAuthor {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-  .seven-days-forecast {
-    padding: 1rem 1.5rem 0;
-  }
-  .seven-day-row {
-    padding-bottom: 0.4rem;
-  }
-  .seven-days-title {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .seven-days-forecast {
-    padding: 1rem 1.5rem 0;
-  }
-  .seven-day-row {
-    padding-bottom: 0.4rem;
-  }
-  .seven-days-title {
-    margin-bottom: 0;
+@media screen and (max-width: 320px) {
+  .qouteText {
+    margin: 0.5rem;
   }
 }

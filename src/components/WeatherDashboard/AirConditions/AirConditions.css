@@ -1,7 +1,6 @@
 .air-component {
   display: flex;
   width: 50%;
-  /* border: 1px solid green; */
   gap: 1rem;
 }
 
@@ -22,11 +21,30 @@
   font-weight: 600;
 }
 
+/* media queries */
+@media screen and (max-width: 768px) {
+  .air-title {
+    font-size: 14px;
+  }
+  .air-value {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .air-title {
     font-size: 14px;
   }
   .air-value {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .air-title {
+    font-size: 12px;
+  }
+  .air-value {
+    font-size: 18px;
   }
 }

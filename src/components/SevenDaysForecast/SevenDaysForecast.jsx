@@ -115,8 +115,8 @@ const FourDaysForecast = (props) => {
 
         {quote ? (
           <>
-            <blockquote>{quote.quoteText}</blockquote>
-            <blockquote>
+            <blockquote className="qouteText">{`"${quote.quoteText}"`}</blockquote>
+            <blockquote className="qouteAuthor">
               <cite>- {quote.quoteAuthor}</cite>
             </blockquote>
           </>
